@@ -1,6 +1,5 @@
-import _ from 'lodash';
 import './style.css';
-import loadScores from './load-scores';
+import loadScores from './load-scores.js';
 
 window.addEventListener('load', () => {
   loadScores();

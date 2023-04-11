@@ -17,15 +17,20 @@
     <main>
       <div class="score-board">
         <div class="score-refresh">
-          <h3>Recent scores</h3>
+          <h2>Recent scores</h2>
           <a class="refresh">Refresh</a>
         </div>
         <div class="score-display">
-
+          <ul></ul>
         </div>
       </div>
-      <div clas="add-score">
-
+      <div class="add-score">
+        <h2>Add your score</h2>
+        <form>
+          <input type="text" placeholder="Your name" id="player-name">
+          <input type="text" placeholder="Your score" id="player-score">
+          <input type="button" id="submitButton" value="Submit">
+        </form>
       </div>
     </main>
   <script src="index.js"></script>
