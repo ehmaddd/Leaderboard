@@ -1,3 +1,90 @@
 body {
-    background-color: azure;
+    font-family: 'Comic Neue', cursive;
+}
+
+.header-div {
+    font-size: 2rem;
+    padding-left: 18%;
+}
+
+main {
+    text-align: center;
+    display: flex;
+}
+
+.score-board {
+    width: 40%;
+    padding-left: 12%;
+}
+
+.score-refresh h2 {
+    display: inline;
+    font-size: 2rem;
+}
+
+.score-refresh a {
+    margin-left: 5rem;
+    padding: 6px 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid black;
+    box-shadow: 3px 6px #888888;
+    cursor: pointer;
+}
+
+.score-display {
+    padding-right: 10%;
+    padding-left: 5%;
+}
+
+.score-display ul {
+    list-style-type: none;
+    border: 3px solid black;
+    padding-left: 0;
+    margin-left: 12%;
+}
+
+.score-display li {
+    height: 1.7rem;
+    display: block;
+    text-align: left;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 2%;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.add-score {
+    width: 20%;
+}
+
+.add-score h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.add-score form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-score input {
+    height: 2rem;
+    width: 16rem;
+    border: 3px solid black;
+    margin-bottom: 5%;
+}
+
+#submitButton {
+    width: 6rem;
+    margin-right: 5px;
+    align-self: flex-end;
+    box-shadow: 3px 6px #888888;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: black;
 }
