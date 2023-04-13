@@ -7,9 +7,7 @@ window.addEventListener('load', () => {
   loadData();
 });
 
-const refreshButton = document.querySelector('.refresh');
-
-refreshButton.addEventListener('click', () => {
+document.querySelector('.refresh').addEventListener('click', () => {
   clearScores();
   loadData();
 });
