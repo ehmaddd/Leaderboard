@@ -1,5 +1,7 @@
 body {
   font-family: 'Comic Neue', cursive;
+  background-image: url('./bodybg.jpg');
+  background-size: cover;
 }
 
 .header-div {
@@ -27,30 +29,39 @@ main {
   padding: 6px 12px;
   font-size: 1.2rem;
   font-weight: bold;
-  border: 3px solid black;
-  box-shadow: 3px 6px #888;
+  border: 3px solid cadetblue;
+  color: white;
+  background: black;
+  box-shadow: 3px 6px rgb(204, 204, 200);
   cursor: pointer;
+}
+
+.score-refresh a:hover {
+  border: 3px solid greenyellow;
 }
 
 .score-display {
   padding-right: 10%;
   padding-left: 5%;
+  background: rgba(216, 225, 214, 0.5);
 }
 
 .score-display ul {
   list-style-type: none;
-  border: 3px solid black;
   padding-left: 0;
   margin-left: 12%;
 }
 
 .score-display li {
-  height: 1.7rem;
+  background-image: url('./bg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 1.9rem;
   display: block;
   text-align: left;
-  padding-top: 1.5%;
+  padding-top: 4.7%;
   padding-bottom: 1.5%;
-  padding-left: 2%;
+  padding-left: 12%;
   font-weight: 500;
   font-size: 1.3rem;
 }
@@ -68,12 +79,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgba(216, 225, 214, 0.8);
 }
 
 .add-score input {
   height: 2rem;
   width: 16rem;
-  border: 3px solid black;
   margin-bottom: 5%;
 }
 
@@ -87,4 +98,14 @@ main {
 
 ::placeholder {
   color: black;
+}
+
+.li-div-1 {
+  display: inline;
+}
+
+.li-div-2 {
+  display: inline;
+  float: right;
+  margin-right: 7%;
 }

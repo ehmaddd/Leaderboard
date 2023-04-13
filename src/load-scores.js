@@ -13,10 +13,14 @@ const loadData = () => {
       const ul = document.querySelector('.score-display ul');
       for (let i = 0; i < response.result.length; i += 1) {
         const li = document.createElement('li');
-        li.textContent = `${response.result[i].user} : ${response.result[i].score}`;
-        if (i % 2 === 0) {
-          li.style.backgroundColor = '#dddddd';
-        }
+        const div1 = document.createElement('div');
+        const div2 = document.createElement('div');
+        div1.textContent = `${response.result[i].user}`;
+        div2.textContent = `${response.result[i].score}`;
+        li.appendChild(div1);
+        div1.classList.add('li-div-1');
+        div2.classList.add('li-div-2');
+        li.appendChild(div2);
         ul.appendChild(li);
       }
     });
